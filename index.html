@@ -9,15 +9,33 @@
 	<link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="style.css">
 </head>
-<body>
+ <body>
     <div class="container">
       <h1>Cruddy Todo App</h1>
-
       <div class="add">
-        <form>
+        <form class="form-inline">
           <input class="form-control" type="text" placeholder="add a todo item">
           <input class="btn btn-primary" type="submit">
         </form>
+      </div>
+      <div class="index">
+        <table>
+          <thead>
+            <tr>
+              <th>Task</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Make a todo list</td>
+              <td>
+                <button class="btn btn-success">Complete</button>
+                <button class="btn btn-danger">Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
     <script src="vendor/jquery/dist/jquery.min.js"></script>
